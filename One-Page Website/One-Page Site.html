@@ -6,7 +6,8 @@
 		<meta name="description" content="One Page Project.">
 		<link rel="stylesheet" href="./one_page_website.css">
 		<link rel="stylesheet" href="./animations_one_page_site.css">
-		<title>The FITLAB121 | SHOP</title>
+		<link rel="stylesheet" href="./lightbox_one_page_website.css">
+ 		<title>The FITLAB121 | SHOP</title>
 		<link rel="shortcut icon" href="./Images/IMG_20200827_180052.png">
 	</head>
 
@@ -18,6 +19,7 @@
 				<ul class="menu">
 					<a href="#home"><li>Home</li></a>
 					<a href="#shop"><li>Shop</li></a>
+					<a href="#mockups"><li>Product examples</li></a>
 					<a href="#contact"><li>Contact</li></a>
 				</ul>
 			</div>
@@ -33,7 +35,7 @@
 			</div>
 		</div>
 		<!-- END HOME -->
-		
+
 		<!-- SHOP -->
 		<section id="shop">
 			<div class="container">
@@ -114,6 +116,62 @@
 			</div>
 		</section>
 		<!-- END SHOP -->
+
+		<!-- LIGHTBOX -->
+		<section id="mockups">
+			<h2>Product examples</h2>
+			  <div class="row1">
+			   <div class="col1">
+				  <img src="./Mockups/mockups1.jpg" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" alt="Pink Hoodie" />
+			   </div>
+			   <div class="col1">
+				  <img src="./Mockups/mockups2.jpg" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" alt="Black Hoodie" />
+			   </div>
+			   <div class="col1">
+				  <img src="./Mockups/mockups4.jpg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="White T-Shirt" />
+			   </div>
+			   <div class="col1">
+				<img src="./Mockups/mockups5.jpg" onclick="openLightbox();toSlide(4)" class="hover-shadow preview" alt="Black Hoodie small logo" />
+			   </div>
+			  </div>
+			 
+			  <div id="Lightbox" class="modal">
+			   <span class="close pointer" onclick="closeLightbox()">&times;</span>
+			   <div class="modal-content">
+				 <div class="slide">
+				   <img src="./Mockups/mockups1_wide.jpg" class="image-slide" alt="Pink Hoodie" />
+				 </div>
+				 <div class="slide">
+				   <img src="./Mockups/mockups2_wide.jpg" class="image-slide" alt="Black Hoodie" />
+				 </div>    
+				 <div class="slide">
+				   <img src="./Mockups/mockups4_wide.jpg" class="image-slide" alt="White T-Shirt" />
+				 </div>
+				 <div class="slide">
+					<img src="./Mockups/mockups5_wide.jpg" class="image-slide" alt="Black Hoodie small logo" />
+				  </div>
+			   
+				 <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+				 <a class="next" onclick="changeSlide(1)">&#10095;</a>
+					 
+				 <div class="dots">
+				   <div class="col1">
+					 <img src="./Mockups/mockups1_wide.jpg" class="modal-preview hover-shadow" onclick="toSlide(1)" alt="Pink Hoodie" />
+				   </div>
+				   <div class="col1">
+					 <img src="./Mockups/mockups2_wide.jpg" class="modal-preview hover-shadow" onclick="toSlide(2)" alt="Black Hoodie" />
+				   </div>
+				   <div class="col1">
+					 <img src="./Mockups/mockups4_wide.jpg" class="modal-preview hover-shadow" onclick="toSlide(3)" alt="White T-Shirt" />
+				   </div>
+				   <div class="col1">
+					<img src="./Mockups/mockups5_wide.jpg" class="modal-preview hover-shadow" onclick="toSlide(4)" alt="Black Hoodie small logo" />
+				  </div>
+				 </div>
+			   </div> 
+			  </div>
+		</section>
+		<!-- END LIGHTBOX -->
 		
 		<!-- RSVP -->	
 		<section id="contact">
