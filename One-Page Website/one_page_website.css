@@ -144,7 +144,9 @@ section {
     ------------------------------------------------------ */
 
 #home {
-    background: url("./Images/1598547409720.png") no-repeat 50% 50%;
+    background-image: url('./Images/98547409720.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
