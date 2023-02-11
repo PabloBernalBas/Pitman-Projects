@@ -4,17 +4,15 @@
     <!-- REQUIRED META TAGS-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- BOOTSTRAP CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <title>Academy Cinemas</title>
 
   </head>
   <body>
     
+    <!--Show times-->
     <div class="container">
-
       <nav class="navbar navbar-expand-lg navbar-dark bg-info">
           <div class="collapse navbar-collapse" id="navbarTroggleDemo2">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -22,7 +20,7 @@
                 <a class="nav-link text-light" aria-current="page" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="#showtime">Showtimes</a>
+                <a class="nav-link text-light" href="#showtime">Show times</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-light" href="deals">Deals</a>
@@ -34,14 +32,21 @@
             </form>
           </div>
       </nav>
-
+      <!--/Show times-->
+      
+      <!--Jumbotron Heading-->
       <div class="jumbotron jumbotron-fluid bg-info text-center">
         <div class="container">
           <h1 class="display-4 text-light">Academy Cinemas</h1>
           <p class="lead text-light">Sit back, relax, and enjoy the show.</p>
+          <!--Movie deals-->
+          <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#register">See our monthly movie deals!</button>
+          <!--/Movie deals-->
         </div>
       </div>
+      <!--/Jumbotron Heading-->
 
+      <!--Movie Card-->
       <div class="card-group my-5 text-center">
         <div class="card">
           <img class="card-img" src="./kongskullisland.jpg" alt="Card image cap" height="240" width="300">
@@ -96,48 +101,75 @@
           </div>
         </div>
       </div>
+      <!--/Movie Card-->
 
       <div class="container">
         <div class="row">
           <div class="col">
-
               <img class="img-fluid" src="./pdx.jpg" alt=" ">
-
           </div>
           <div class="col">
-
-            <h3>Accomodations:</h3>
+            <h3>Accommodations:</h3>
             <p>Located in beautiful Portland, Oregon's district, our reels have been spinning since1959</p>
             <p>Showing our guests a great time is our passion and seeing theirsmiles is our pleasure!</p>
             <p>All of our auditoriums are equipped with brand new Christie 3D&reg; sound systems!</p>
             <p>Relax in our, extra-wide, plush cushioning recliners. Our seating arrangement is disavility friendly &#9855;.</p>
-
-            
           </div>
           <div class="col">
-
             <h3>Now Playing:</h3>
             <ul class="list-group">
                 <li class="list-group-item">
-                  <a class="nav-link" href="#">Kong: Skull Island</a>
+                  <a class="nav-link" href="https://www.imdb.com/title/tt3731562/?ref_=nv_sr_srsg_0">Kong: Skull Island</a>
                 </li>
                 <li class="list-group-item">
-                  <a class="nav-link" href="#">Ghost in the Shell</a>
+                  <a class="nav-link" href="https://www.imdb.com/title/tt1219827/?ref_=fn_al_tt_1">Ghost in the Shell</a>
                 </li>
                 <li class="list-group-item">
-                  <a class="nav-link" href="#">Beauty and the Beast</a>
+                  <a class="nav-link" href="https://www.imdb.com/title/tt2771200/?ref_=nv_sr_srsg_0">Beauty and the Beast</a>
                 </li>
             </ul>
           </div>
         </div>
       </div>
 
-      <!--Showtimes-->
+      <!--Carousel-->
+      <h1><span class="badge badge-pill badge-warning">UPCOMING MOVIES</span></h1>
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+          <li data-target="#carousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./antmanandthewaspquantumania_lob.png" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./avatar 2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./Creed 3.jpg" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./John-Wick-4-Release-Date-Scott-A.png" alt="Fourth slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
 
 
+      <!--/Carousel-->
 
-      <!--/Showtimes-->
 
+      <!--Sign up form-->
       <div class="text-center">
         <form>
             <h1 class="text-primary my-5">Sign up for Movie Club Rewards!</h1>
@@ -145,11 +177,55 @@
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" 
               placeholder="Enter email">  
               <br>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="button" class="btn btn-primary popover-dismiss" data-container="body" data-toggle="popover" data-toggle="popover" data-placement="top" 
+              data-content="Thank you for sign up, latest movies info will be share with you.">Sign up</button>
             </div>
         </form>
       </div>
+      <!--/Sign up form-->
 
+      <!--Form Modal-->
+      <div class="modal" tabindex="-1" id="register" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Register to receive movie deals...</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              
+              <form>
+                <fieldset class="form-group">
+                  <label for="firstname">First Name:</label>
+                  <input type="text" class="form-control" id="firstname" placeholder="First Name...">
+                </fieldset>
+                <fieldset class="form-group">
+                  <label for="lastname">Last Name:</label>
+                  <input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+                </fieldset>
+                <fieldset class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Email...">
+                </fieldset>
+                <fieldset class="form-group">
+                  <label for="password">Password:</label>
+                  <input type="password" class="form-control" id="password" placeholder="Password...">
+                </fieldset>
+              </form>
+            
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/Form Modal-->
+
+      <!--Footer-->
       <div class="container my-5">
           <ul class="nav nav-inline">
               <li class="nav-item">
@@ -165,13 +241,24 @@
                 <small class="nav-link" href="#">&copy;2019 Academy Cinemas&reg;</small>
               </li>
           </ul>
-
       </div>
+      <!--/Footer-->
 
     </div>
 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+      $('.popover-dismiss').popover({ //jQuery method 
+        trigger: 'focus'
+        })
+      $('.carousel').carousel({ //jQuery method
+        interval: 3000
+        })
+    </script>
+  </body>
 </html>
