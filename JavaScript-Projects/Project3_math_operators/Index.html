@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main3.js"></script>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create two equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 30%;
+          padding: 10px;
+          height: 300px; 
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        </style>
+</head>
+<body>
+    <h2>Math Assignment</h2>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <button onclick="document.getElementById('addition_Function').innerHTML = addition_Function()">The addition is?</button>
+    <br>
+    <button onclick="document.getElementById('subtraction_Function').innerHTML = subtraction_Function()">The subtraction is?</button>
+    <br>
+    <button onclick="document.getElementById('multiplication').innerHTML = multiplication()">The multiplication is?</button>
+    <br>
+    <button onclick="document.getElementById('division').innerHTML = division()">The division is?</button>
+    <br>
+    <button onclick="document.getElementById('more_Math').innerHTML = more_Math()">The Multiple Operations is?</button>
+    <br>
+    <button onclick="document.getElementById('modulus_Operator').innerHTML = modulus_Operator()">The modulus_Operator is?</button>
+    <br>
+    <button onclick="document.getElementById('increment').innerHTML = increment()">The new value increment is?</button>
+    <br>
+    <button onclick="document.getElementById('decrement').innerHTML = decrement()">The new value decrement is?</button>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Result</h2>
+    <p id="Math"></p>
+  </div>
+</div>
+    
+</body>
+</html>

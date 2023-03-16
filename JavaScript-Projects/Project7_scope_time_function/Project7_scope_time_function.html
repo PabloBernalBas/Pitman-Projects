@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project7_scope_time_functionProject7_scope_time_function</title>
+    <script src="Project7_scope_time_function.js"></script>
+    <style> 
+        button { 
+        font-size: large;
+        height: 100px; 
+        width: 200px; 
+        } 
+    </style> 
+</head>
+<body onload="checkTime()" background="./background.jpg">
+    <div>
+        <p id="Time_of_day"></p>
+        <button onclick="Time_function ()">Click here to get the time.</button>
+    </div>
+    <br>
+    <div>
+    	<label>Insert the current time and date:</label>
+        <input type="datetime-local" id="time" min="00:00" max="23:59"/>
+        <br>
+    </div>
+    <br>
+    <div>
+        <h1 id="greeting"></h1>
+        <button onclick="checkTime()">Click here if an image doesn't shows up.</button>
+        <br>
+        <br>
+        <img id="image" style="height:500px; width:500px;"> 
+        <br>
+        <button id="Greeting" onclick="get_Date()">Click for a Greetings.</button>      
+    </div>
+</body>
+</html>
